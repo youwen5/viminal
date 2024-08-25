@@ -10,6 +10,8 @@ It can be consumed directly in your configuration but as it contains many heavil
 personalized configuration options, you should probably just use it as inspiration or as an example
 for your own config.
 
+Feel free to fork or copy the config to use yourself. It's free in the [public domain.](./LICENSE).
+
 ## Usage
 
 Add it to your flake inputs, and import `homeManagerModules.default` as a home-manager module:
