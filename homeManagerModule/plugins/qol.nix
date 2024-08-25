@@ -1,6 +1,12 @@
 # Quality of life plugins
 {pkgs, ...}: {
   programs.nixvim = {
+    extraPackages = with pkgs; [
+      ripgrep
+      yazi
+      fd
+    ];
+
     plugins = {
       zen-mode.enable = true;
       direnv.enable = true;

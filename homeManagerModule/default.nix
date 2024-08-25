@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  imports = [./plugins ./keymaps.nix];
+  imports = [./plugins ./keymaps.nix ./init.nix];
   programs.nixvim = {
     enable = true;
     viAlias = true;
@@ -12,11 +12,5 @@
       combinePlugins.enable = true;
       byteCompileLua.enable = true;
     };
-
-    extraPackages = with pkgs; [
-      ripgrep
-      yazi
-      fd
-    ];
   };
 }
