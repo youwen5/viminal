@@ -2,16 +2,16 @@
   description = "Personal Neovim configuration.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs";
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs @ {
-    nixpkgs,
+  outputs = {
     nixvim,
+    nixpkgs,
     ...
   }: {
     homeManagerModules.default = {
