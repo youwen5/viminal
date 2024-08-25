@@ -15,7 +15,7 @@
     ...
   }: {
     homeManagerModules.default = {
-      imports = [nixvim.homeManagerModules.nixvim ./default.nix];
+      imports = [nixvim.homeManagerModules.nixvim ./homeManagerModule];
     };
   };
 }
