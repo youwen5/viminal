@@ -18,9 +18,9 @@ build a Nixvim configuration as a standalone Nix package.
 
 ## Usage
 
-You can test drive my config in just one line:
+You can test drive my config in just one line (if you have Nix, of course):
 ```sh
-nix run 'github:youwen5/neovim-flake'
+nix run 'github:youwen5/neovim-flake' --extra-experimental-features flakes --extra-experimental-features nix-command
 ```
 
 If for some reason, you want to install it permanently, add it to your flake inputs,
