@@ -528,19 +528,21 @@
       # Code formatting
       conform-nvim = {
         enable = true;
-        format_on_save = {
-          timeoutMs = 500;
-          lspFallback = true;
-        };
-        formatters_by_ft = {
-          lua = ["stylua"];
-          python = ["black"];
-          nix = ["alejandra"];
-          svelte = ["prettier"];
-          rust = ["rustfmt"];
-          haskell = ["fourmolu"];
-          "*" = ["codespell"];
-          "_" = ["trim_whitespace"];
+        settings = {
+          format_on_save = {
+            timeoutMs = 500;
+            lspFallback = true;
+          };
+          formatters_by_ft = {
+            lua = ["stylua"];
+            python = ["black"];
+            nix = ["alejandra"];
+            svelte = ["prettier"];
+            rust = ["rustfmt"];
+            haskell = ["fourmolu"];
+            "*" = ["codespell"];
+            "_" = ["trim_whitespace"];
+          };
         };
       };
 
