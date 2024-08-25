@@ -1,6 +1,6 @@
 # All the mini.nvim stuff
 {
-  programs.nixvim.plugins.mini = {
+  plugins.mini = {
     enable = true;
     modules = {
       surround = {};

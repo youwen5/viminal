@@ -1,6 +1,6 @@
 # Misc stuff
 {
-  programs.nixvim.plugins = {
+  plugins = {
     # Extra (stuff that doesn't affect editing)
     wakatime.enable = true;
     presence-nvim = {

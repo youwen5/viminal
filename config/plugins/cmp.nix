@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins = {
+  plugins = {
     cmp-async-path.enable = true;
     cmp = {
       enable = true;

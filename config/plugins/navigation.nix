@@ -1,6 +1,6 @@
 # Getting around REALLY FAST
 {
-  programs.nixvim.plugins = {
+  plugins = {
     telescope = {
       enable = true;
       extensions = {
