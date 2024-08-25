@@ -1,5 +1,7 @@
 {pkgs, ...}: {
   imports = [./plugins ./keymaps.nix ./init.nix];
+  viAlias = true;
+  vimAlias = true;
   withNodeJs = true;
   withRuby = true;
 
