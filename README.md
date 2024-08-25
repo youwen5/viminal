@@ -53,7 +53,7 @@ and install the package in the usual way:
 }
 ```
 
-> ![WARNING]
+> [!WARNING]
 > This package will add the symlinks `vim -> nvim` and `vi -> nvim` so it will conflict with
 > `pkgs.vim` and any programs installing binaries called `vim` or `vi`. You must remove existing
 > Neovim and Vim packages to install this.
