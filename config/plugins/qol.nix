@@ -27,6 +27,7 @@
     gitsigns.enable = true;
     # Language specific tools
     markdown-preview.enable = true;
+    ts-autotag.enable = true;
   };
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
