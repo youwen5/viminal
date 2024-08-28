@@ -9,7 +9,6 @@
       notify = {};
       tabline = {};
       trailspace = {};
-      comment = {};
       cursorword = {};
       bracketed = {};
     };
