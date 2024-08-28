@@ -20,9 +20,7 @@
       marksman.enable = true;
     };
   };
-  plugins = {
-    typescript-tools.enable = true;
-  };
+  plugins.typescript-tools.enable = true;
   plugins.lsp-lines.enable = true;
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
