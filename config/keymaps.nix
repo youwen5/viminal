@@ -278,22 +278,34 @@
     {
       action = "<Plug>(YankyPutAfter)";
       key = "p";
-      mode = ["n" "x"];
+      mode = [
+        "n"
+        "x"
+      ];
     }
     {
       action = "<Plug>(YankyPutBefore)";
       key = "P";
-      mode = ["n" "x"];
+      mode = [
+        "n"
+        "x"
+      ];
     }
     {
       action = "<Plug>(YankyGPutAfter)";
       key = "gp";
-      mode = ["n" "x"];
+      mode = [
+        "n"
+        "x"
+      ];
     }
     {
       action = "<Plug>(YankyGPutBefore)";
       key = "gP";
-      mode = ["n" "x"];
+      mode = [
+        "n"
+        "x"
+      ];
     }
     {
       action = ":Telescope yank_history<CR>";

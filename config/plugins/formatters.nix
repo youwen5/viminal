@@ -1,5 +1,6 @@
 # Code formatters
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   extraPackages = with pkgs; [
     # TS/JS, Markdown, TOML, JSON, etc
     nodePackages.prettier
@@ -31,21 +32,21 @@
         lspFallback = true;
       };
       formatters_by_ft = {
-        lua = ["stylua"];
-        python = ["black"];
-        nix = ["nixfmt"];
-        svelte = ["prettier"];
-        rust = ["rustfmt"];
-        haskell = ["fourmolu"];
-        toml = ["prettier"];
-        json = ["prettier"];
-        markdown = ["prettier"];
-        yaml = ["prettier"];
-        html = ["prettier"];
-        javascript = ["prettier"];
-        typescript = ["prettier"];
+        lua = [ "stylua" ];
+        python = [ "black" ];
+        nix = [ "nixfmt" ];
+        svelte = [ "prettier" ];
+        rust = [ "rustfmt" ];
+        haskell = [ "fourmolu" ];
+        toml = [ "prettier" ];
+        json = [ "prettier" ];
+        markdown = [ "prettier" ];
+        yaml = [ "prettier" ];
+        html = [ "prettier" ];
+        javascript = [ "prettier" ];
+        typescript = [ "prettier" ];
         # "*" = ["codespell"];
-        "_" = ["trim_whitespace"];
+        "_" = [ "trim_whitespace" ];
       };
     };
   };

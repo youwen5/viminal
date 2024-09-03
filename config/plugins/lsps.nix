@@ -1,5 +1,6 @@
 # LSP setup
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   extraPackages = with pkgs; [
     rust-analyzer
     lua-language-server

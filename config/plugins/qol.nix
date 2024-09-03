@@ -1,5 +1,6 @@
 # Quality of life plugins
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   extraPackages = with pkgs; [
     ripgrep
     yazi

@@ -3,14 +3,14 @@
   plugins.mini = {
     enable = true;
     modules = {
-      surround = {};
-      ai = {};
-      hipatterns = {};
-      notify = {};
-      tabline = {};
-      trailspace = {};
-      cursorword = {};
-      bracketed = {};
+      surround = { };
+      ai = { };
+      hipatterns = { };
+      notify = { };
+      tabline = { };
+      trailspace = { };
+      cursorword = { };
+      bracketed = { };
     };
   };
 }
