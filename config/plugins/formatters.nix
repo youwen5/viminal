@@ -1,14 +1,14 @@
 # Code formatters
 {pkgs, ...}: {
   extraPackages = with pkgs; [
-    # TS/JS
+    # TS/JS, Markdown, TOML, JSON, etc
     nodePackages.prettier
 
     # Rust
     rustfmt
 
     # Nix
-    alejandra
+    nixfmt-rfc-style
 
     # Python
     black
@@ -20,7 +20,7 @@
     haskellPackages.fourmolu
 
     # Misc
-    codespell
+    # codespell
   ];
 
   plugins.conform-nvim = {
@@ -33,11 +33,18 @@
       formatters_by_ft = {
         lua = ["stylua"];
         python = ["black"];
-        nix = ["alejandra"];
+        nix = ["nixfmt"];
         svelte = ["prettier"];
         rust = ["rustfmt"];
         haskell = ["fourmolu"];
-        "*" = ["codespell"];
+        toml = ["prettier"];
+        json = ["prettier"];
+        markdown = ["prettier"];
+        yaml = ["prettier"];
+        html = ["prettier"];
+        javascript = ["prettier"];
+        typescript = ["prettier"];
+        # "*" = ["codespell"];
         "_" = ["trim_whitespace"];
       };
     };
