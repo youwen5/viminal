@@ -81,6 +81,15 @@
       };
     }
     {
+      action = "<cmd>Bdelete!<CR><cmd>close<CR>";
+      key = "<Leader>wk";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Close current window, along with the buffer open inside.";
+      };
+    }
+    {
       action = "<cmd>Telescope find_files<CR>";
       key = "<Leader>ff";
       options = {
@@ -311,6 +320,7 @@
       action = ":Telescope yank_history<CR>";
       key = "<Leader>p";
       mode = "n";
+      options.desc = "Look through yank history with telescope.";
     }
     {
       action = '':lua require("yazi").yazi()<CR>'';
@@ -344,6 +354,24 @@
       key = "<Leader>cd";
       options = {
         desc = "Toggle lsp lines";
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = '':lua vim.lsp.codelens.run()'';
+      key = "<Leader>cl";
+      options = {
+        desc = "Run codelens";
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = '':Telescope ht hoogle_signature<CR>'';
+      key = "<Leader>fg";
+      options = {
+        desc = "Search hoogle for under cursor";
         noremap = true;
         silent = true;
       };
