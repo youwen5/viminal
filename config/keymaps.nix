@@ -324,7 +324,7 @@
     }
     {
       action = '':lua require("yazi").yazi()<CR>'';
-      key = "<Leader>mm";
+      key = "<Leader>e";
       options = {
         desc = "Open Yazi current nvim working directory";
         noremap = true;
