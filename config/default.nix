@@ -4,6 +4,7 @@
     ./plugins
     ./keymaps.nix
     ./init.nix
+    ./autocmds.nix
   ];
   viAlias = true;
   vimAlias = true;
