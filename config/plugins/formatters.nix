@@ -20,6 +20,8 @@
     # Haskell
     haskellPackages.fourmolu
 
+    taplo
+
     # Misc
     # codespell
   ];
@@ -38,7 +40,7 @@
         svelte = [ "prettier" ];
         rust = [ "rustfmt" ];
         haskell = [ "fourmolu" ];
-        toml = [ "prettier" ];
+        toml = [ "taplo" ];
         json = [ "prettier" ];
         markdown = [ "prettier" ];
         yaml = [ "prettier" ];
