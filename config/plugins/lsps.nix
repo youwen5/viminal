@@ -1,5 +1,5 @@
 # LSP setup
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPackages = with pkgs; [
     rust-analyzer
@@ -26,21 +26,11 @@
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
       name = "haskell-tools-nvim";
-      src = pkgs.fetchFromGitHub {
-        owner = "mrcjkb";
-        repo = "haskell-tools.nvim";
-        rev = "959eac0fadbdd27442904a8cb363f39afb528027";
-        hash = "sha256-5CS5kvUSqQJe7iFFpicinBjCQXgFPL0ElGgnrZHTT+Y=";
-      };
+      src = inputs.haskell-tools;
     })
     (pkgs.vimUtils.buildVimPlugin {
       name = "rustaceanvim";
-      src = pkgs.fetchFromGitHub {
-        owner = "mrcjkb";
-        repo = "rustaceanvim";
-        rev = "7cba8e599deca98d4b44cac1bcbd720c62937d90";
-        hash = "sha256-OYfeJuo4FZUBdW9wGGCT0lZGYr/ur1uy8frcyUJMF3k=";
-      };
+      src = inputs.rustaceanvim;
     })
   ];
 }

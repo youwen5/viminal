@@ -144,6 +144,22 @@
         "type": "github"
       }
     },
+    "haskell-tools": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725935019,
+        "narHash": "sha256-M+AcprniBOBQFkhXCacAyBtFF5FZyGSG5F6e8ld+r9c=",
+        "owner": "mrcjkb",
+        "repo": "haskell-tools.nvim",
+        "rev": "2443c3b2ab049561009d1b5712e839db546b6586",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrcjkb",
+        "repo": "haskell-tools.nvim",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -264,11 +280,63 @@
         "type": "github"
       }
     },
+    "render-markdown": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1726165713,
+        "narHash": "sha256-6EoJWKXePglg8hiErp1VOaI/xmYFonthHZL4s96fZXc=",
+        "owner": "MeanderingProgrammer",
+        "repo": "render-markdown.nvim",
+        "rev": "cb935afe5bb52965e2bfc11cf7b563bb159ef4f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MeanderingProgrammer",
+        "repo": "render-markdown.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
+        "haskell-tools": "haskell-tools",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "render-markdown": "render-markdown",
+        "rustaceanvim": "rustaceanvim",
+        "satellite": "satellite"
+      }
+    },
+    "rustaceanvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1726158967,
+        "narHash": "sha256-wZ8SZjHSU1WnhkKx2hXgI5pLRSglOM52kOtJbB3QCds=",
+        "owner": "mrcjkb",
+        "repo": "rustaceanvim",
+        "rev": "5610d5e01dc803717cc0b6b87625f2fbb548b49e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrcjkb",
+        "repo": "rustaceanvim",
+        "type": "github"
+      }
+    },
+    "satellite": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725437627,
+        "narHash": "sha256-5WMKEsS9e9nTuylZ5pRPIW+G/52HKC1bjSdz3GvJg+8=",
+        "owner": "lewis6991",
+        "repo": "satellite.nvim",
+        "rev": "dfc2b220f4969ebc49b0f2a94ab6faae240705bd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lewis6991",
+        "repo": "satellite.nvim",
+        "type": "github"
       }
     },
     "systems": {

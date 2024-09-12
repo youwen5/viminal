@@ -6,6 +6,23 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    render-markdown = {
+      url = "github:MeanderingProgrammer/render-markdown.nvim";
+      flake = false;
+    };
+    satellite = {
+      url = "github:lewis6991/satellite.nvim";
+      flake = false;
+    };
+    haskell-tools = {
+      url = "github:mrcjkb/haskell-tools.nvim";
+      flake = false;
+    };
+    rustaceanvim = {
+      url = "github:mrcjkb/rustaceanvim";
+      flake = false;
+    };
   };
 
   outputs =
@@ -33,6 +50,9 @@
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs;
+            extraSpecialArgs = {
+              inherit inputs;
+            };
             module = import ./config;
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
