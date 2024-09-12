@@ -19,10 +19,6 @@
       url = "github:mrcjkb/haskell-tools.nvim";
       flake = false;
     };
-    rustaceanvim = {
-      url = "github:mrcjkb/rustaceanvim";
-      flake = false;
-    };
   };
 
   outputs =
