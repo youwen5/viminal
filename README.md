@@ -19,6 +19,11 @@ are just symlinks to `nvim`), except it bundles all of my custom configuration
 and their dependencies with the power of Nix. Plugins are managed by Nix. An
 entirely self-contained, reproducible, purely functional text editor. Amazing.
 
+All plugins are precompiled to Lua bytecode by `Luajit` when the package is
+built for maximum speed and efficiency. When possible, plugins are also
+combined for a massive efficiency boost. This allows startup times as fast as
+lazy loading without all of the hassle.
+
 Feel free to fork or copy the config to use yourself. It's free in the [public
 domain](./LICENSE).
 
