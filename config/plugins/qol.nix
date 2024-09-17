@@ -48,7 +48,15 @@
     };
     crates-nvim.enable = true;
     # git stuff
-    gitsigns.enable = true;
+    gitsigns = {
+      enable = true;
+      settings = {
+        current_line_blame_opts = {
+          virt_text = true;
+          virt_text_pos = "eol";
+        };
+      };
+    };
     neogit = {
       enable = true;
       settings.graph_style = "unicode";
