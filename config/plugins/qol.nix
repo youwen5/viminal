@@ -14,7 +14,10 @@
     comment.enable = true;
     vim-bbye.enable = true;
     indent-blankline.enable = true;
-    which-key.enable = true;
+    which-key = {
+      enable = true;
+      settings.delay = 1000;
+    };
     nvim-autopairs.enable = true;
     yanky = {
       enable = true;
@@ -47,6 +50,7 @@
     # git stuff
     lazygit.enable = true;
     gitsigns.enable = true;
+    neogit.enable = true;
     # Language specific tools
     markdown-preview.enable = true;
     ts-autotag.enable = true;
