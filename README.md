@@ -2,19 +2,22 @@
 
 This is the Neovim configuration for all my NixOS and Nix enabled systems (such
 as with nix-darwin on macOS). It aims to be minimal and utilitarian; it forgoes
-many blingful features like status lines, sidebars, or fancy UI enhancements in
-favor of native (neo)Vim, while still having everything useful you'd expect,
-like LSPs, file explorer (`yazi`), completions, advanced language tools, and
-QoL enhancements.
+many blingful features like sidebars or fancy UI enhancements in favor of
+native (neo)Vim, while still having everything useful you'd expect, like LSPs,
+file explorer (`oil.nvim`), completions, advanced language tools, and QoL
+enhancements.
 
-It uses the [Nixvim](https://nix-community.github.io/nixvim/) project under the
-hood to declaratively configure Neovim and its plugins, and installs some LSPs
-and other tools needed by it (like `yazi`, `fd`, etc).
+It uses the [Nixvim](https://nix-community.github.io/nixvim/) project under
+the hood to declaratively configure Neovim and its plugins, and installs tools
+needed by it (like `ripgrep`, `fd`, etc). However, LSPs are not installed or
+handled by the plugin. The user is expected to provide their own LSPs in the
+`$PATH`, but since they are using Nix, this is trivial.
 
-It simply outputs a package which provides the binary `nvim`. It can be called
-just like the regular `nvim` binary, except it bundles all of my custom
-configuration and their dependencies with the power of Nix. An entirely
-self-contained, reproducible, purely functional text editor. Amazing.
+The flake simply provides a package that contains the binaries `nvim`, `vim`,
+and `vi`. It can be called just like the regular `nvim` binary (`vim` and `vi`
+are just symlinks to `nvim`), except it bundles all of my custom configuration
+and their dependencies with the power of Nix. Plugins are managed by Nix. An
+entirely self-contained, reproducible, purely functional text editor. Amazing.
 
 Feel free to fork or copy the config to use yourself. It's free in the [public
 domain](./LICENSE).
