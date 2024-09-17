@@ -77,18 +77,22 @@
         cmdToggleQuickMenu = "<Leader>hm";
         gotoTerminal = {
           "1" = "<Leader>ht";
-          "2" = "<Leader>2";
-          "3" = "<Leader>3";
-          "4" = "<Leader>4";
+          "2" = "<Leader>h2";
+          "3" = "<Leader>h3";
+          "4" = "<Leader>h4";
         };
         navFile = {
-          "1" = "<Leader>ha";
-          "2" = "<Leader>hs";
-          "3" = "<Leader>hd";
-          "4" = "<Leader>hf";
+          "1" = "<C-h>";
+          "2" = "<C-j>";
+          "3" = "<C-k>";
+          "4" = "<C-l>";
+          "5" = "<Leader>1";
+          "6" = "<Leader>2";
+          "7" = "<Leader>3";
+          "8" = "<Leader>4";
         };
-        navNext = "<Leader>h]";
-        navPrev = "<Leader>h[";
+        navNext = "<Leader>]";
+        navPrev = "<Leader>[";
         toggleQuickMenu = "<Leader>hk";
       };
     };
