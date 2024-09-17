@@ -323,10 +323,19 @@
       options.desc = "Look through yank history with telescope.";
     }
     {
-      action = '':lua require("yazi").yazi()<CR>'';
+      action = '':Oil<CR>'';
       key = "<Leader>e";
       options = {
-        desc = "Open Yazi current nvim working directory";
+        desc = "Open oil file explorer in current nvim working directory";
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = '':Oil<CR>'';
+      key = "<Leader>e";
+      options = {
+        desc = "Open oil file explorer in current nvim working directory";
         noremap = true;
         silent = true;
       };
@@ -376,15 +385,6 @@
         silent = true;
       };
     }
-    # {
-    #   action = ":Yazi<CR>";
-    #   key = "<Leader>mf";
-    #   options = {
-    #     desc = "Open Yazi at current file";
-    #     noremap = true;
-    #     silent = true;
-    #   };
-    # }
     # {
     #   action = "<cmd>lua require'conform'.format({ bufnr = args.bf })<CR>";
     #   key = "<Leader>cf";

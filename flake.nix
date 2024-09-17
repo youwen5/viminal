@@ -54,6 +54,7 @@
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
         in
         {
+
           formatter = pkgs.nixfmt-rfc-style;
           checks = {
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;

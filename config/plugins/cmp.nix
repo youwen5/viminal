@@ -1,5 +1,9 @@
 {
   plugins = {
+    lspkind = {
+      enable = true;
+      cmp.enable = true;
+    };
     cmp-async-path.enable = true;
     cmp = {
       enable = true;

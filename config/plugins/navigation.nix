@@ -1,4 +1,5 @@
 # Getting around REALLY FAST
+{ pkgs, ... }:
 {
   plugins = {
     telescope = {
@@ -37,9 +38,21 @@
     };
     yazi = {
       enable = true;
-      settings = {
-        open_for_directories = true;
-      };
+      # settings = {
+      #   open_for_directories = true;
+      # };
+    };
+    oil = {
+      enable = true;
+      # because combinePlugins.enable = true, the collision of `doc` is
+      # unavoidable. this renames them.
+      package = pkgs.vimPlugins.oil-nvim.overrideAttrs (oldAttrs: {
+        postInstall =
+          (oldAttrs.postInstall or "")
+          + ''
+            mv $out/doc/recipes.md $out/doc/oil_recipes.md
+          '';
+      });
     };
     harpoon = {
       enable = true;

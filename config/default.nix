@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   imports = [
     ./plugins
@@ -13,7 +12,16 @@
 
   luaLoader.enable = true;
   performance = {
-    combinePlugins.enable = true;
-    byteCompileLua.enable = true;
+    combinePlugins = {
+      enable = true;
+      standalonePlugins = [
+        "nvim-treesitter"
+      ];
+    };
+    byteCompileLua = {
+      enable = true;
+      plugins = true;
+      nvimRuntime = true;
+    };
   };
 }
