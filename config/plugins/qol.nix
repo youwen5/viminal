@@ -49,7 +49,10 @@
     crates-nvim.enable = true;
     # git stuff
     gitsigns.enable = true;
-    neogit.enable = true;
+    neogit = {
+      enable = true;
+      settings.graph_style = "unicode";
+    };
     # Language specific tools
     markdown-preview.enable = true;
     ts-autotag.enable = true;
