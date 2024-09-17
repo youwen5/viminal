@@ -31,8 +31,15 @@
         sections = {
           lualine_a = [ "branch" ];
           lualine_b = [
-            "diff"
-            "diagnostics"
+            {
+              __unkeyed-1 = {
+                __raw = ''
+                  function()
+                    return require('lsp-progress').progress()
+                  end,
+                '';
+              };
+            }
           ];
           lualine_c = [
             "progress"
@@ -43,15 +50,8 @@
             "fileformat"
           ];
           lualine_y = [
-            {
-              __unkeyed-1 = {
-                __raw = ''
-                  function()
-                    return require('lsp-progress').progress()
-                  end,
-                '';
-              };
-            }
+            "diff"
+            "diagnostics"
           ];
           lualine_z = [ "location" ];
         };
