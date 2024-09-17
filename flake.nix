@@ -1,5 +1,5 @@
 {
-  description = "Personal Neovim configuration.";
+  description = "A minimal and productive Neovim configuration.";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -7,6 +7,7 @@
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
 
+    # Neovim plugins
     render-markdown = {
       url = "github:MeanderingProgrammer/render-markdown.nvim";
       flake = false;
