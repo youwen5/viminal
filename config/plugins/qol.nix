@@ -41,7 +41,6 @@
           lualine_x = [
             "encoding"
             "fileformat"
-            # "filetype"
           ];
           lualine_y = [
             {
@@ -58,6 +57,9 @@
         };
         options = {
           globalstatus = true;
+          disabled_filetypes = [
+            "ministarter"
+          ];
           section_separators = {
             left = "";
             right = "";

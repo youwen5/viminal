@@ -14,6 +14,7 @@
       trailspace = { };
       cursorword = { };
       bracketed = { };
+      starter = { };
     };
     package = pkgs.vimPlugins.mini-nvim.overrideAttrs (oldAttrs: {
       postInstall =
