@@ -47,6 +47,14 @@
             mv $out/doc/recipes.md $out/doc/oil_recipes.md
           '';
       });
+      settings = {
+        keymaps = {
+          "." = "actions.parent";
+          "-" = "";
+          "<C-c>" = "";
+          "Q" = "actions.close";
+        };
+      };
     };
     harpoon = {
       enable = true;
