@@ -6,7 +6,9 @@
       surround = { };
       ai = { };
       hipatterns = { };
-      notify = { };
+      notify = {
+        lsp_progress.enable = false;
+      };
       tabline = { };
       trailspace = { };
       cursorword = { };
