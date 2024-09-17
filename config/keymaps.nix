@@ -169,6 +169,176 @@
       };
     }
     {
+      mode = "n";
+      key = "]c";
+      action = {
+        __raw = ''
+          function()
+            if vim.wo.diff then
+              vim.cmd.normal({']c', bang = true})
+            else
+              require('gitsigns').nav_hunk('next')
+            end
+          end
+        '';
+      };
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Go to next hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "[c";
+      action = {
+        __raw = ''
+          function()
+            if vim.wo.diff then
+              vim.cmd.normal({'[c', bang = true})
+            else
+              require('gitsigns').nav_hunk('prev')
+            end
+          end
+        '';
+      };
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Go to previous hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gs";
+      action = ":lua require('gitsigns').stage_hunk()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Stage hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gr";
+      action = ":lua require('gitsigns').reset_hunk()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Reset hunk";
+      };
+    }
+    {
+      mode = "v";
+      key = "<leader>gs";
+      action = ":lua require('gitsigns').stage_hunk {vim.fn.line('.'), vim.fn.line('v')}<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Stage hunk";
+      };
+    }
+    {
+      mode = "v";
+      key = "<leader>gr";
+      action = ":lua require('gitsigns').reset_hunk {vim.fn.line('.'), vim.fn.line('v')}<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Reset hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gS";
+      action = ":lua require('gitsigns').stage_buffer()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Stage buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gu";
+      action = ":lua require('gitsigns').undo_stage_hunk()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Undo stage hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gR";
+      action = ":lua require('gitsigns').reset_buffer()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Reset buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gp";
+      action = ":lua require('gitsigns').preview_hunk()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Preview hunk";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gb";
+      action = ":lua require('gitsigns').blame_line{full=true}<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "View line blame";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gB";
+      action = ":lua require('gitsigns').toggle_current_line_blame()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle line blame";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gd";
+      action = ":lua require('gitsigns').diffthis()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Git diff";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gD";
+      action = ":lua require('gitsigns').diffthis('~')<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Git diff";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>gtd";
+      action = ":lua require('gitsigns').toggle_deleted()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle git deleted";
+      };
+    }
+    {
       action = ":split | wincmd j | resize 15 | term<CR>";
       key = "<Leader>tt";
       options = {
