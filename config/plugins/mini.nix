@@ -1,4 +1,5 @@
 # All the mini.nvim stuff
+{ pkgs, ... }:
 {
   plugins.mini = {
     enable = true;
@@ -14,5 +15,12 @@
       cursorword = { };
       bracketed = { };
     };
+    package = pkgs.vimPlugins.mini-nvim.overrideAttrs (oldAttrs: {
+      postInstall =
+        (oldAttrs.postInstall or "")
+        + ''
+          rm $out/doc/mini-git.txt
+        '';
+    });
   };
 }
