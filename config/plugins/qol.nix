@@ -35,8 +35,8 @@
             "diagnostics"
           ];
           lualine_c = [
-            "filetype"
             "progress"
+            "filetype"
           ];
           lualine_x = [
             "encoding"
