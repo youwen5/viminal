@@ -27,8 +27,7 @@
       settings = {
         sections = {
           lualine_a = [ "branch" ];
-          lualine_b = [ "diff" ];
-          lualine_c = [
+          lualine_b = [
             {
               __unkeyed-1 = {
                 __raw = ''
@@ -39,6 +38,7 @@
               };
             }
           ];
+          lualine_c = [ "diff" ];
         };
         options.globalstatus = true;
       };
