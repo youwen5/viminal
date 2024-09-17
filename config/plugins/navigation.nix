@@ -49,11 +49,25 @@
       });
       settings = {
         keymaps = {
-          "." = "actions.parent";
-          "-" = "";
-          "<C-c>" = "";
+          "J" = "actions.parent";
           "Q" = "actions.close";
+          "<C-h>" = "actions.select_split";
+          "<C-l>" = "actions.refresh";
+          "<C-p>" = "actions.preview";
+          "<C-s>" = "actions.select_vsplit";
+          "<C-t>" = "actions.select_tab";
+          "<CR>" = "actions.select";
+          "K" = "actions.select";
+          _ = "actions.open_cwd";
+          "`" = "actions.cd";
+          "g." = "actions.toggle_hidden";
+          "g?" = "actions.show_help";
+          "g\\" = "actions.toggle_trash";
+          gs = "actions.change_sort";
+          gx = "actions.open_external";
+          "~" = "actions.tcd";
         };
+        use_default_keymaps = false;
       };
     };
     harpoon = {
