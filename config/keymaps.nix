@@ -36,57 +36,12 @@
       };
     }
     {
-      action = "<C-w>h";
-      key = "<C-h>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Move to left window";
-      };
-    }
-    {
-      action = "<C-w>j";
-      key = "<C-j>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Move to lower window";
-      };
-    }
-    {
-      action = "<C-w>k";
-      key = "<C-k>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Move to upper window";
-      };
-    }
-    {
-      action = "<C-w>l";
-      key = "<C-l>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Move to right window";
-      };
-    }
-    {
       action = "<cmd>close<CR>";
       key = "<Leader>wd";
       options = {
         silent = true;
         noremap = true;
         desc = "Close current window";
-      };
-    }
-    {
-      action = "<cmd>Bdelete!<CR><cmd>close<CR>";
-      key = "<Leader>wk";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Close current window, along with the buffer open inside.";
       };
     }
     {
