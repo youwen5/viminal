@@ -489,14 +489,60 @@
         silent = true;
       };
     }
-    # {
-    #   action = "<cmd>lua require'conform'.format({ bufnr = args.bf })<CR>";
-    #   key = "<Leader>cf";
-    #   options = {
-    #     silent = true;
-    #     noremap = true;
-    #     desc = "Format buffer";
-    #   };
-    # }
+    {
+      action = {
+        __raw = ''
+          function() require('conform').format() end
+        '';
+      };
+      key = "<Leader>cf";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Format buffer";
+      };
+    }
+    {
+      action = {
+        __raw = ''
+          function()
+            -- we do this instead of `not vim.g.disable_autoformat` so that we
+            -- can handle when `vim.g.disable_autoformat` has not yet been defined
+            if (vim.g.disable_autoformat) then
+              vim.g.disable_autoformat = false
+            else
+              vim.g.disable_autoformat = true
+            end
+          end
+        '';
+      };
+      key = "<Leader>ctf";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle autoformat globally";
+      };
+    }
+    {
+      action = {
+        __raw = ''
+            -- we do this instead of `not vim.g.disable_autoformat` so that we
+            -- can handle when `vim.g.disable_autoformat` has not yet been defined
+          function()
+            if (vim.b[0].disable_autoformat) then
+              vim.b[0].disable_autoformat = false
+            else
+              vim.b[0].disable_autoformat = true
+            end
+          end
+        '';
+      };
+      key = "<Leader>cbf";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle autoformat in buffer";
+      };
+    }
   ];
 }
