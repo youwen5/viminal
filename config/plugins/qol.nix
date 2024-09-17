@@ -31,6 +31,19 @@
         sections = {
           lualine_a = [ "branch" ];
           lualine_b = [
+            "diff"
+            "diagnostics"
+          ];
+          lualine_c = [
+            "filetype"
+            "progress"
+          ];
+          lualine_x = [
+            "encoding"
+            "fileformat"
+            # "filetype"
+          ];
+          lualine_y = [
             {
               __unkeyed-1 = {
                 __raw = ''
@@ -41,9 +54,15 @@
               };
             }
           ];
-          lualine_c = [ "diff" ];
+          lualine_z = [ "location" ];
         };
-        options.globalstatus = true;
+        options = {
+          globalstatus = true;
+          section_separators = {
+            left = "";
+            right = "";
+          };
+        };
       };
     };
     crates-nvim.enable = true;
