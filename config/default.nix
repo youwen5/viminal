@@ -16,6 +16,7 @@
       enable = true;
       standalonePlugins = [
         "nvim-treesitter"
+        "vimplugin-treesitter-grammar-nix"
       ];
     };
     byteCompileLua = {
