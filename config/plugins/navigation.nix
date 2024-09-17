@@ -36,12 +36,6 @@
         };
       };
     };
-    yazi = {
-      enable = true;
-      # settings = {
-      #   open_for_directories = true;
-      # };
-    };
     oil = {
       enable = true;
       # because combinePlugins.enable = true, the collision of `doc` is
