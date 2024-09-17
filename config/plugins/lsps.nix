@@ -1,11 +1,6 @@
 # LSP setup
 { pkgs, inputs, ... }:
 {
-  extraPackages = with pkgs; [
-    rust-analyzer
-    lua-language-server
-  ];
-
   plugins = {
     lsp = {
       enable = true;
