@@ -181,6 +181,22 @@
         "type": "github"
       }
     },
+    "lsp-progress": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721008335,
+        "narHash": "sha256-OafRT5AnxRTOh7MYofRFjti0+pobKQihymZs/kr5w0A=",
+        "owner": "linrongbin16",
+        "repo": "lsp-progress.nvim",
+        "rev": "d5f4d28efe75ce636bfbe271eb45f39689765aab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "linrongbin16",
+        "repo": "lsp-progress.nvim",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -300,6 +316,7 @@
       "inputs": {
         "flake-parts": "flake-parts",
         "haskell-tools": "haskell-tools",
+        "lsp-progress": "lsp-progress",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "render-markdown": "render-markdown",

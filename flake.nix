@@ -19,6 +19,10 @@
       url = "github:mrcjkb/haskell-tools.nvim";
       flake = false;
     };
+    lsp-progress = {
+      url = "github:linrongbin16/lsp-progress.nvim";
+      flake = false;
+    };
   };
 
   outputs =
