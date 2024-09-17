@@ -169,6 +169,15 @@
       };
     }
     {
+      action = ":Neogit commit<CR>";
+      key = "<Leader>gc";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Open commit menu";
+      };
+    }
+    {
       mode = "n";
       key = "]c";
       action = {

@@ -1,11 +1,22 @@
-# Neovim Configuration Flake
+# viminal
 
-This is the Neovim configuration for all my NixOS and Nix enabled systems (such
-as with nix-darwin on macOS). It aims to be minimal and utilitarian; it forgoes
-many blingful features like sidebars or fancy UI enhancements in favor of
-native (neo)Vim, while still having everything useful you'd expect, like LSPs,
-file explorer (`oil.nvim`), completions, advanced language tools, and QoL
+This is the Neovim configuration for all my NixOS and Nix enabled systems
+(including macOS). It aims to be minimal and utilitarian; it forgoes many
+blingful features like sidebars or fancy UI enhancements in favor of native
+(neo)Vim, while still having everything useful you'd expect, like LSPs, file
+explorer (`oil.nvim`), completions, advanced language tools, and QoL
 enhancements.
+
+The central design goal is to prefer Vim whenever possible. The Vim text editor
+is already incredibly powerful, and many plugins designed to emulate features
+from more bloated editors like VS Code can already be accomplished in native
+Vim. To that end, plugins were selected to unobtrusively integrate with Vim.
+For instance, `oil.nvim` allows you to interface with your filesystem through a
+regular Vim buffer, and Git integration is done by Gitsigns and `Neogit`, which
+enable a similar interface for Git. The long-term benefit of this is avoiding
+lock-in to a plugin that encourages a heavily idiosyncratic workflow which may
+become unmaintained in the future, while the Neovim core itself is almost
+assuredly going stick around.
 
 It uses the [Nixvim](https://nix-community.github.io/nixvim/) project under
 the hood to declaratively configure Neovim and its plugins, and installs tools
@@ -36,7 +47,7 @@ showing me how to build a Nixvim configuration as a standalone Nix package.
 You can test drive my config in just one line (if you have Nix, of course):
 
 ```sh
-nix run 'github:youwen5/neovim-flake' --extra-experimental-features flakes --extra-experimental-features nix-command
+nix run 'github:youwen5/viminal' --extra-experimental-features flakes --extra-experimental-features nix-command
 ```
 
 If for some reason, you want to install it permanently, add it to your flake
@@ -49,7 +60,7 @@ inputs, and install the package in the usual way:
 
   inputs = {
     # -- snip --
-    custom-neovim.url = "github:youwen5/neovim-flake";
+    viminal.url = "github:youwen5/viminal";
   };
     # -- snip --
   };
@@ -63,7 +74,7 @@ inputs, and install the package in the usual way:
 {inputs, system, ...}:
 {
   environment.systemPackages = [
-    inputs.custom-neovim.packages.${system}.default
+    inputs.viminal.packages.${system}.default
     # supported systems: x86_64-linux, aarch64-linux, x86_64-darwin, aarch64-darwin
   ];
 }
