@@ -15,33 +15,12 @@
       mode = "n";
     }
     {
-      action = "<cmd>sp<CR><C-w>j";
-      key = "<Leader>-";
-      options.silent = true;
-      options.desc = "Split window horizontally";
-    }
-    {
-      action = "<cmd>vsp<CR><c-w>l";
-      key = "<Leader>\\";
-      options.silent = true;
-      options.desc = "Split window vertically";
-    }
-    {
       action = "<cmd>ZenMode<CR>";
       key = "<Space>wz";
       options = {
         silent = true;
         noremap = true;
         desc = "Zen mode";
-      };
-    }
-    {
-      action = "<cmd>close<CR>";
-      key = "<Leader>wd";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Close current window";
       };
     }
     {
