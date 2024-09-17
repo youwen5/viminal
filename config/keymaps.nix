@@ -226,12 +226,12 @@
       };
     }
     {
-      action = ":LazyGit<CR>";
+      action = ":Neogit<CR>";
       key = "<Leader>gg";
       options = {
         silent = true;
         noremap = true;
-        desc = "Open LazyGit";
+        desc = "Open Neogit";
       };
     }
     {

@@ -48,7 +48,6 @@
     };
     crates-nvim.enable = true;
     # git stuff
-    lazygit.enable = true;
     gitsigns.enable = true;
     neogit.enable = true;
     # Language specific tools
