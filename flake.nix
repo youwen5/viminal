@@ -26,6 +26,10 @@
       url = "github:linrongbin16/lsp-progress.nvim";
       flake = false;
     };
+    cellular-automaton = {
+      url = "github:Eandrju/cellular-automaton.nvim";
+      flake = false;
+    };
   };
 
   outputs =

@@ -101,5 +101,9 @@
       name = "lsp-progress.nvim";
       src = inputs.lsp-progress;
     })
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "cellular-automaton.nvim";
+      src = inputs.cellular-automaton;
+    })
   ];
 }
