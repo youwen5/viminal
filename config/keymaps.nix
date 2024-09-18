@@ -750,5 +750,13 @@
         desc = "Toggle autoformat in buffer";
       };
     }
+    {
+      action = ":UndotreeToggle<CR>";
+      key = "<Leader>u";
+      options = {
+        noremap = true;
+        desc = "Open undotree";
+      };
+    }
   ];
 }

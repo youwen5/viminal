@@ -25,6 +25,7 @@
     };
     trouble.enable = true;
     barbecue.enable = true;
+    undotree.enable = true;
     lualine = {
       enable = true;
       settings = {
