@@ -82,7 +82,7 @@
       enable = true;
       settings = {
         graph_style = "unicode";
-        popup = "floating";
+        popup.kind = "floating";
       };
     };
     # The greatest QoL plugin of all time. Renders codeblocks, formatting, etc
