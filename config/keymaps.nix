@@ -65,7 +65,61 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "Go to definition";
+        desc = "Go to definition, or search through them (if multiple)";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.lsp_implementations{}<CR>";
+      key = "gr";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Go to implementation";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.lsp_workplace_symbols{}<CR>";
+      key = "<leader>fs";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "List and search through document symbols";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.lsp_type_definitions{}<CR>";
+      key = "<leader>fct";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "List and search through type definitions";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.lsp_references{}<CR>";
+      key = "<leader>fcr";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "List and search through references";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.diagnostics{}<CR>";
+      key = "<leader>fcd";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "List and search through diagnostics";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.keymaps{}<CR>";
+      key = "<leader>fcd";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Search through keymaps";
       };
     }
     {
