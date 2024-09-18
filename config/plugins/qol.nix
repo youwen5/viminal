@@ -83,6 +83,8 @@
       settings.graph_style = "unicode";
     };
     # The greatest QoL plugin of all time. Renders codeblocks, formatting, etc
+    # in LSP popup buffers too. GUI users will never flex on you with their
+    # typesetting again!
     markdown-preview.enable = true;
 
     # Language specific tools
