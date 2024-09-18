@@ -46,6 +46,16 @@
     }
     {
       mode = "n";
+      action = ":CellularAutomaton game_of_life<CR>";
+      key = "<leader>bruh";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "A mysterious surprise!";
+      };
+    }
+    {
+      mode = "n";
       action = "nzzzv";
       key = "n";
       options = {
