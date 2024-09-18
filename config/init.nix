@@ -6,5 +6,8 @@
     laststatus = 3;
     relativenumber = true;
     number = true;
+    shiftwidth = 2;
+    tabstop = 4;
+    foldlevel = 9;
   };
 }
