@@ -80,7 +80,10 @@
     };
     neogit = {
       enable = true;
-      settings.graph_style = "unicode";
+      settings = {
+        graph_style = "unicode";
+        popup = "floating";
+      };
     };
     # The greatest QoL plugin of all time. Renders codeblocks, formatting, etc
     # in LSP popup buffers too. GUI users will never flex on you with their
