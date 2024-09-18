@@ -24,6 +24,129 @@
       };
     }
     {
+      mode = "n";
+      action = "<C-d>";
+      key = "<C-d>zz";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Scroll down and center";
+      };
+    }
+    {
+      mode = "n";
+      action = ":%%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>";
+      key = "<leader>fs";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Search and replace the word under the cursor globally and case-insensitively";
+      };
+    }
+    {
+      mode = "n";
+      action = "<C-u>";
+      key = "<C-u>zz";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Scroll up and center";
+      };
+    }
+    {
+      mode = "n";
+      action = ":CellularAutomaton make_it_rain<CR>";
+      key = "<leader>kys";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "A mysterious surprise!";
+      };
+    }
+    {
+      mode = "n";
+      action = "nzzzv";
+      key = "n";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Search next and center screen, reopening folds";
+      };
+    }
+    {
+      mode = "n";
+      action = "Nzzzv";
+      key = "N";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Search previous and center screen, reopening folds";
+      };
+    }
+    # The greatest remap of all time -- the primeagen
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "\"_d";
+      key = "<leader>d";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Delete without copying to register";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "\"+y";
+      key = "<leader>y";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Yank to system clipboard";
+      };
+    }
+    {
+      mode = "n";
+      action = "\"+Y";
+      key = "<leader>Y";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Yank whole line to system clipboard";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "\"+p";
+      key = "<leader>p";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Put from system clipboard";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "\"+P";
+      key = "<leader>P";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Put from system clipboard";
+      };
+    }
+    {
       action = "<cmd>Telescope find_files<CR>";
       key = "<Leader>ff";
       options = {
@@ -485,9 +608,12 @@
     }
     {
       action = ":Telescope yank_history<CR>";
-      key = "<Leader>p";
-      mode = "n";
-      options.desc = "Look through yank history with telescope.";
+      key = "<Leader>fp";
+      mode = [
+        "n"
+        "v"
+      ];
+      options.desc = "Search through yank history with telescope.";
     }
     {
       action = '':Oil<CR>'';
