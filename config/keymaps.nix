@@ -200,12 +200,21 @@
       };
     }
     {
-      action = "<cmd>lua require'telescope.builtin'.lsp_workplace_symbols{}<CR>";
-      key = "<leader>fs";
+      action = "<cmd>lua require'telescope.builtin'.lsp_document_symbols{}<CR>";
+      key = "<leader>a";
       options = {
         silent = true;
         noremap = true;
         desc = "List and search through document symbols";
+      };
+    }
+    {
+      action = "<cmd>lua require'telescope.builtin'.lsp_workspace_symbols{}<CR>";
+      key = "<leader>fcs";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "List and search through workplace symbols";
       };
     }
     {
