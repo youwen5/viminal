@@ -8,6 +8,6 @@
     number = true;
     shiftwidth = 2;
     tabstop = 4;
-    foldlevel = 9;
+    foldlevel = 15;
   };
 }
