@@ -73,6 +73,10 @@
 
           packages = {
             default = nvim;
+            vimg = pkgs.writeScriptBin "vimg" ''
+              #!/bin/sh
+              ${nvim}/bin/nvim +Neogit
+            '';
           };
         };
     };

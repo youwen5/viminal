@@ -5,7 +5,9 @@ This is the Neovim configuration for all my NixOS and Nix enabled systems
 blingful features like sidebars or fancy UI enhancements in favor of native
 (neo)Vim, while still having everything useful you'd expect, like LSPs, file
 explorer (`oil.nvim`), completions, advanced language tools, and QoL
-enhancements.
+enhancements. Additionally, a small wrapper script called `vimg` is provided in
+`packages.${system}.vimg` which simply opens Neovim inside the `Neogit` UI.
+This allows it to be used as a quick git TUI from the shell.
 
 The central design goal is to prefer Vim whenever possible. The Vim text editor
 is already incredibly powerful, and many plugins designed to emulate features
