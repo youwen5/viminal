@@ -128,6 +128,24 @@
       };
     }
     {
+      mode = "n";
+      key = "<C-u>";
+      action = "<C-u>zz";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-d>";
+      action = "<C-d>zz";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
       action = "<cmd>Telescope find_files<CR>";
       key = "<Leader>ff";
       options = {
