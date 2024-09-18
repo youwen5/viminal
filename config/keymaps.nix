@@ -36,42 +36,6 @@
     # center the screen when scrolling
     {
       mode = "n";
-      key = "<C-u>";
-      action = "<C-u>zz";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-d>";
-      action = "<C-d>zz";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-f>";
-      action = "<C-f>zz";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-b>";
-      action = "<C-b>zz";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = "n";
       action = ":CellularAutomaton make_it_rain<CR>";
       key = "<leader>kys";
       options = {
