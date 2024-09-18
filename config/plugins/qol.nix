@@ -83,8 +83,14 @@
       settings = {
         graph_style = "unicode";
         popup.kind = "floating";
+        integrations = {
+          diffview = true;
+          telescope = true;
+        };
       };
     };
+    diffview.enable = true;
+
     # The greatest QoL plugin of all time. Renders codeblocks, formatting, etc
     # in LSP popup buffers too. GUI users will never flex on you with their
     # typesetting again!
