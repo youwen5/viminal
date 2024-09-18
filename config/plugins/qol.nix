@@ -82,7 +82,6 @@
       enable = true;
       settings = {
         graph_style = "unicode";
-        popup.kind = "floating";
         integrations = {
           diffview = true;
           telescope = true;

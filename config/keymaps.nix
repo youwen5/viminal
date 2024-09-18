@@ -25,16 +25,6 @@
     }
     {
       mode = "n";
-      action = "<C-d>";
-      key = "<C-d>zz";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Scroll down and center";
-      };
-    }
-    {
-      mode = "n";
       action = ":%%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>";
       key = "<leader>fs";
       options = {
@@ -43,14 +33,23 @@
         desc = "Search and replace the word under the cursor globally and case-insensitively";
       };
     }
+    # center the screen when scrolling
     {
       mode = "n";
-      action = "<C-u>";
-      key = "<C-u>zz";
+      key = "<C-u>";
+      action = "<C-u>zz";
       options = {
         silent = true;
         noremap = true;
-        desc = "Scroll up and center";
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-d>";
+      action = "<C-d>zz";
+      options = {
+        silent = true;
+        noremap = true;
       };
     }
     {
@@ -337,12 +336,21 @@
       };
     }
     {
-      action = ":Neogit<CR>";
+      action = ":Neogit kind=floating<CR>";
       key = "<Leader>gg";
       options = {
         silent = true;
         noremap = true;
-        desc = "Open Neogit";
+        desc = "Open Neogit in floating window";
+      };
+    }
+    {
+      action = ":Neogit<CR>";
+      key = "<Leader>gG";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Open Neogit in standalone tab";
       };
     }
     {
