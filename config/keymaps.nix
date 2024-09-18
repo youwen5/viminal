@@ -37,7 +37,7 @@
     {
       mode = "n";
       action = ":CellularAutomaton make_it_rain<CR>";
-      key = "<leader>kys";
+      key = "<leader>mr";
       options = {
         silent = true;
         noremap = true;

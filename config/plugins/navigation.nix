@@ -82,10 +82,10 @@
           "4" = "<Leader>h4";
         };
         navFile = {
-          "1" = "<C-h>";
-          "2" = "<C-j>";
-          "3" = "<C-k>";
-          "4" = "<C-l>";
+          "1" = "<leader>j";
+          "2" = "<leader>k";
+          "3" = "<leader>l";
+          "4" = "<leader>;";
           "5" = "<Leader>1";
           "6" = "<Leader>2";
           "7" = "<Leader>3";
