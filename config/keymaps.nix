@@ -54,6 +54,24 @@
     }
     {
       mode = "n";
+      key = "<C-f>";
+      action = "<C-f>zz";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-b>";
+      action = "<C-b>zz";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = "n";
       action = ":CellularAutomaton make_it_rain<CR>";
       key = "<leader>kys";
       options = {
@@ -336,30 +354,21 @@
       };
     }
     {
-      action = ":Neogit kind=floating<CR>";
+      action = ":Neogit<CR>";
       key = "<Leader>gg";
       options = {
         silent = true;
         noremap = true;
-        desc = "Open Neogit in floating window";
+        desc = "Open Neogit";
       };
     }
     {
-      action = ":Neogit<CR>";
-      key = "<Leader>gG";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Open Neogit in standalone tab";
-      };
-    }
-    {
-      action = ":Neogit commit<CR>";
+      action = ":Neogit kind=floating commit<CR>";
       key = "<Leader>gc";
       options = {
         silent = true;
         noremap = true;
-        desc = "Open commit menu";
+        desc = "Quickly open Neogit commit menu";
       };
     }
     {
