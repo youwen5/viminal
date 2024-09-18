@@ -74,6 +74,24 @@
         desc = "Search previous and center screen, reopening folds";
       };
     }
+    {
+      mode = "n";
+      key = "<C-k>";
+      action = ":cnext<CR>zz";
+      options = {
+        noremap = true;
+        desc = "Go to next diagnostic";
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-j>";
+      action = ":cprev<CR>zz";
+      options = {
+        noremap = true;
+        desc = "Go to previous diagnostic";
+      };
+    }
     # The greatest remap of all time -- the primeagen
     {
       mode = [
