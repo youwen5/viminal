@@ -82,8 +82,10 @@
       enable = true;
       settings.graph_style = "unicode";
     };
-    # Language specific tools
+    # The greatest QoL plugin of all time. Renders codeblocks, formatting, etc
     markdown-preview.enable = true;
+
+    # Language specific tools
     ts-autotag.enable = true;
   };
   extraPlugins = [
