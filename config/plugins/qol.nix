@@ -10,7 +10,7 @@
     zen-mode.enable = true;
     direnv.enable = true;
     intellitab.enable = true;
-    guess-indent.enable = true;
+    sleuth.enable = true;
     comment.enable = true;
     vim-bbye.enable = true;
     indent-blankline.enable = true;
