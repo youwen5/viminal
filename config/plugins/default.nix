@@ -9,5 +9,6 @@
     ./misc.nix
     ./navigation.nix
     ./treesitter.nix
+    ./typst.nix
   ];
 }

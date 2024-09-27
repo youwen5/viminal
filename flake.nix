@@ -30,6 +30,10 @@
       url = "github:Eandrju/cellular-automaton.nvim";
       flake = false;
     };
+    typst-preview = {
+      url = "github:chomosuke/typst-preview.nvim";
+      flake = false;
+    };
   };
 
   outputs =

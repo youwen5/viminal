@@ -337,7 +337,8 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "render-markdown": "render-markdown",
-        "satellite": "satellite"
+        "satellite": "satellite",
+        "typst-preview": "typst-preview"
       }
     },
     "satellite": {
@@ -389,6 +390,22 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "typst-preview": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724595641,
+        "narHash": "sha256-kJ6IfLSBmJMgEFuCy6fGtqSRBXjt2Aoxu2NW9iyzRLU=",
+        "owner": "chomosuke",
+        "repo": "typst-preview.nvim",
+        "rev": "7ae2b82cf334819494505b772745beb28705b12b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chomosuke",
+        "repo": "typst-preview.nvim",
         "type": "github"
       }
     }
