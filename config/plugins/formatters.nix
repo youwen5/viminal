@@ -22,6 +22,7 @@
 
     taplo
 
+    typstyle
     # Misc
     # codespell
   ];
