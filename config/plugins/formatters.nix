@@ -92,6 +92,7 @@
         html = [ "prettier" ];
         javascript = [ "prettier" ];
         typescript = [ "prettier" ];
+        typst = [ "typstyle" ];
         # "*" = ["codespell"];
         "_" = [ "trim_whitespace" ];
       };
