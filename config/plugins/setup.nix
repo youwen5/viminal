@@ -1,9 +1,17 @@
 # Manual setup for some plugins
+{ pkgs, ... }:
 {
   extraConfigLua = ''
     require("telescope").load_extension("yank_history")
     require("telescope").load_extension("ht")
     vim.diagnostic.config({ virtual_lines = false })
+
+    require 'typst-preview'.setup {
+      dependencies_bin = {
+        ['typst-preview'] = ${pkgs.tinymist},
+        ['websocat'] = ${pkgs.websocat}
+      }
+    }
 
     require("lsp-progress").setup({
       client_format = function(client_name, spinner, series_messages)
