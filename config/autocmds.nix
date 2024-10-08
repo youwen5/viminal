@@ -6,19 +6,5 @@
         "TermOpen"
       ];
     }
-    # {
-    #   command = {
-    #     __raw = ''
-    #       require('typst-preview').update()
-    #     '';
-    #   };
-    #   event = [
-    #     "BufEnter"
-    #     "BufWinEnter"
-    #   ];
-    #   pattern = [
-    #     "*.typ"
-    #   ];
-    # }
   ];
 }
