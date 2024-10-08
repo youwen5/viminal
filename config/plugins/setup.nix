@@ -8,8 +8,8 @@
 
     require 'typst-preview'.setup {
       dependencies_bin = {
-        ['typst-preview'] = ${pkgs.tinymist},
-        ['websocat'] = ${pkgs.websocat}
+        ['typst-preview'] = "${pkgs.tinymist}/bin/tinymist",
+        ['websocat'] = "${pkgs.websocat}/bin/websocat"
       }
     }
 
