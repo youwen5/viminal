@@ -13,7 +13,7 @@
         nushell.enable = true;
         svelte.enable = true;
         tailwindcss.enable = true;
-        typst-lsp.enable = true;
+        tinymist.enable = true;
         marksman.enable = true;
       };
     };
